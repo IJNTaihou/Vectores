@@ -22,5 +22,6 @@ int main()
 	{
 		cout << "Letra " << l + 1 << " es : " << vocal[l] << endl;
 	}
+        delete[] vocal;
 	_getch();
 }
