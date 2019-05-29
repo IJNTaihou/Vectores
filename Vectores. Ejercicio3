@@ -1,0 +1,39 @@
+//Vectores. Ejercicio3
+#include<iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{
+	//Variables
+	double *notas;
+	double nota;
+	notas = new double[15];
+
+	//Parte operativa
+	for (int i = 0; i < 15; i++) 
+	{
+		cout << "Ingrese nota entre 0 y 20: " << i + 1 ;
+		cin >> nota;
+
+		if (nota >= 0 && nota <= 20) 
+		{
+			cout << "Ingrese nota(valores admisibles(nota menor de 20 y mayor a cero):";
+			notas[i] = nota;
+		}
+		else
+		{
+			cout << "No ingreso un valor admisible(Se le pondra cero autoaticamente: ";
+			notas[i] = 0;
+		}
+
+	}
+
+	//Impresion de datos
+	for (int i = 0; i < 15; i++) 
+	{
+		cout << "Los valores son : " << notas[i] << endl;
+	}
+	_getch();
+}
