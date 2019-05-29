@@ -1,0 +1,26 @@
+//Vectores. Ejercicio2
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	//Variables
+	char *vocal;
+	vocal = new char[5];
+
+	//Parte operativa
+	for (int l = 0; l < 5; l++)
+	{
+		cout << "Letra " << l + 1 << ": ";
+		cin >> vocal[l];
+	}
+	cout << endl;
+		
+	//Impresion de datos
+	for (int l = 4; l >= 0; l--)
+	{
+		cout << "Letra " << l + 1 << " es : " << vocal[l] << endl;
+	}
+	_getch();
+}
